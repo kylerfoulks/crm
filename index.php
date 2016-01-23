@@ -22,7 +22,10 @@
     
     <div class="container-fluid">
     	<div class="row">
-    		<div class="col-xs-12 headerLoggedIn"></div>
+    		<div class="col-xs-12 headerLoggedIn">
+                <div class="glyphicon glyphicon-menu-hamburger hamburger"></div>
+                <div class="UserInfo"><div class="profilePic"></div>First Last</div>
+            </div>
     	</div>
     	<div class="row">
     		<div class="col-xs-4 col-md-2 userNav">
