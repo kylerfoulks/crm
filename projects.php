@@ -7,7 +7,7 @@
     		<?php require_once('userNav.php');?> 
 
             <div class="col-md-8 content-wrap">
-                <div class="page-title">Dashboard</div>
+                <div class="page-title">Projects</div>
             </div>
 
 
