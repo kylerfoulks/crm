@@ -1,8 +1,4 @@
 <?php require_once('header.php');
-$app->get('/cowsay', function() use($app) {
-  $app['monolog']->addDebug('cowsay');
-  return "<pre>".\Cowsayphp\Cow::say("Cool beans")."</pre>";
-});
 ?>
 
 
@@ -16,18 +12,7 @@ $app->get('/cowsay', function() use($app) {
             </div>
 
 
-<?php
-$dsn = "pgsql:"
-    . "host=ec2-54-83-59-203.compute-1.amazonaws.com;"
-    . "dbname=ddrn1hhgb465rs;"
-    . "user=apduhqpapfemah;"
-    . "port=5432;"
-    . "sslmode=require;"
-    . "password=rF0iut51FBnE5UcSFFOjnPqGNs";
 
-if ($db = new PDO($dsn)) {
-    echo 'yes';
-}?>
 
 
     	</div>
