@@ -1,0 +1,87 @@
+
+body{
+	min-height: 800px;
+}
+
+/*=================================================Logged in header*/
+.headerLoggedIn{
+	height: 30px;
+	background-color: #f8f7f7;
+	border-bottom: 1px solid #eae9e9;
+	top: 0;
+}
+
+
+
+
+/*Nav Logged In*/
+.userNav{
+	min-height: 300px;
+	background-color: #ededed;
+	border-right:2px solid #dedede;
+	padding: 0;
+	height: 100%;
+}
+
+.userNav ul{
+	margin-top: 10px;
+	padding: 0;
+}
+
+.userNav li{
+	list-style: none;
+	height: 34px;
+	display: inline-block;
+	width: 100%;
+	padding-left: 10px;
+}
+.userNav li:hover{
+	text-decoration: none;
+	background-color: #268ddc;
+	color: #fff;
+}
+
+.userNav li:hover >a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.userNav li a{
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 10px;
+	line-height: 34px;
+	width: 86%;
+	display: inline-block;
+	float: left;
+}
+.userNav .active{
+	background-color: #268ddc;
+}
+.userNav .active a {
+	color: #FFF;
+	display: inline-block;
+	width: 86%;
+}
+
+.userNav .active .glyphicon{
+	color: #fff;
+}
+
+/*Page Basics*/
+.page-title{
+	font-size:24px;
+	font-weight: bold;	
+	width: 100%;
+	margin-top: 10px;
+}
+
+/*glyphicons*/
+.glyphicon-dashboard,.glyphicon-user,.glyphicon-tasks,.glyphicon-list-alt,.glyphicon-usd{
+	font-size: 26px;
+	float: left;
+	line-height: 23px;
+	display: inline-block;
+	margin-top: 4px;
+}
