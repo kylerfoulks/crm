@@ -46,11 +46,6 @@
 </nav>
 
 
-<div class="jumbotron">
-	<h1>Project Management</h1>
-	<p>with a minimalist approach</p>
-	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>	
 
 
 	

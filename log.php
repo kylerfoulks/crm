@@ -42,15 +42,39 @@
       
       
     </div><!-- /.navbar-collapse -->
+
+
+
+
   </div><!-- /.container-fluid -->
+
+
 </nav>
+  
+  <div class="container-fluid">
+    <div class="panel panel-default col-lg-3 col-lg-offset-4" style="padding: 0;">
+      <div class="panel-heading">Log In</div>
+      <div class="panel-body">
+          <form>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Username</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Password</span>
+              <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+            </div>
+
+            <input type="submit" value="Log In" class="btn btn-primary" style="float: right;margin-top: 10px;">
+          </form>
 
 
-<div class="jumbotron">
-	<h1>Project Management</h1>
-	<p>with a minimalist approach</p>
-	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>	
+
+      </div>
+    </div>
+  </div>
+
 
 
 	
