@@ -86,11 +86,15 @@ body{
 	color: #fff;
 }
 
+.lowerUL{
+	border-top: 1px solid #666;
+}
+
 /*Page Basics*/
 .page-title{
+	float: left;
 	font-size:24px;
-	font-weight: bold;	
-	width: 100%;
+	font-weight: bold;
 	margin-top: 10px;
 }
 .hamburger {
@@ -101,6 +105,12 @@ body{
 	margin-bottom: 5px;
 }
 
+.newBtn{
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
 /*glyphicons*/
 .glyphicon-dashboard,.glyphicon-user,.glyphicon-tasks,.glyphicon-list-alt,.glyphicon-usd{
 	font-size: 26px;
@@ -108,4 +118,57 @@ body{
 	line-height: 23px;
 	display: inline-block;
 	margin-top: 4px;
+}
+
+/*Projects Page*/
+.projectPreview{
+	height: 125px;
+	border: 1px solid #978b8b;
+	position: relative;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+
+.projectPreview .top{
+	height: 75%;
+	width: 100%;
+}	
+
+.projectPreview .logo {
+	background-image: url("../images/google.png");
+	background-repeat: no-repeat;
+	width: 9%;
+	float: left;
+	height: 50px;
+}
+
+.projectPreview .companyTitle{
+	float: left;
+	font-size: 16px;
+	width: 25%;
+	display: inline-block;
+}
+
+.projectPreview .currentPhase{
+	float: left;
+}
+
+.projectPreview .contactInfo{
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.projectPreview .bottom .tag{
+	float: left;
+	margin-right: 5px;
+}
+
+.projectPreview .bottom .right{
+	float: right;
+	
 }
