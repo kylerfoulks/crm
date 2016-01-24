@@ -170,5 +170,47 @@ body{
 
 .projectPreview .bottom .right{
 	float: right;
+
+}
+
+.projectDomain{
+	float: left;	
+	font-size: 16px;
+	padding-top: 17px;
+	font-weight: bold;	
+	padding-left: 10px;
+}
+.phase{
+	color: #666;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+}
+
+.description{
+	clear: both;
+}
+
+.crecentials .btn{
+	margin-top: 3px;
+}
+
+.active-tasks{
+	margin-top: 20px;
+}
+.task-single{
+	border: 1px solid #999;
+	margin-bottom: 5px;
+	min-height: 35px;
+	padding-top: 5px;
+	position: relative;
+}
+
+.task-single .title{
+
+}
+
+.completedTasks{
 	
 }
