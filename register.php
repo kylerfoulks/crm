@@ -7,6 +7,20 @@
 <body>
 
 
+<?php
+    require_once('includes/functions.php');
+
+    if (isset($_POST['submit'])){
+      userRegister();
+
+
+
+
+    }
+
+
+?>
+
 <div class="container">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -43,7 +57,63 @@
       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+
+
 </nav>
+
+ <div class="container">
+      <div class="panel panel-default col-lg-5 col-lg-offset-3 register" style="padding: 0;">
+      <div class="panel-heading">Register</div>
+      <div class="panel-body">
+          <form method="post" action="register.php">
+            Type of Account: <br>
+            <input type="radio" name="accountType" value="company"> Company<br>
+            <input type="radio" name="accountType" value="employee"> Employee<br>
+
+             <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">First Name</span>
+              <input type="text" required class="form-control" name="first_name" placeholder="First Name" aria-describedby="basic-addon1">
+            </div>
+
+             <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Last Name</span>
+              <input type="text" required name="last_name" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Username</span>
+              <input type="text" required name="username" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Company</span>
+              <input type="text"  name="company" class="form-control" placeholder="Company" aria-describedby="basic-addon1">
+            </div>
+
+             <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Email</span>
+              <input type="email" required name="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Password</span>
+              <input type="password" required name="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Confirm Password</span>
+              <input type="password" required name="password2" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1">
+            </div>
+
+            <input name="submit" type="submit" value="Create Account" class="btn btn-primary" style="float: right;margin-top: 10px;">
+          </form>
+
+
+
+      </div>
+    </div>
+
+  </div>
 
 
 

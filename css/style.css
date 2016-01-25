@@ -214,3 +214,7 @@ body{
 .completedTasks{
 	
 }
+
+.register .input-group,.logIn .input-group{
+	margin-top: 5px;
+}

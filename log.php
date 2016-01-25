@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="log.php">Log In </a></li>
-        <li><a href="#">Register</a></li>
+        <li><a href="register.php">Register</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -51,7 +51,7 @@
 
 </nav>
   
-  <div class="container-fluid">
+  <div class="container-fluid logIn">
     <div class="panel panel-default col-lg-3 col-lg-offset-4" style="padding: 0;">
       <div class="panel-heading">Log In</div>
       <div class="panel-body">
@@ -75,7 +75,11 @@
     </div>
   </div>
 
+<?php require_once('includes/functions.php');
+  get_users();
 
+
+?>
 
 	
 </div>
