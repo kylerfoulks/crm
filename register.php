@@ -9,9 +9,25 @@
 
 <?php
     require_once('includes/functions.php');
-
+    $message = '';
     if (isset($_POST['submit'])){
-      userRegister();
+
+      $password = $_POST['password'];
+      $password2 = $_POST['password2'];
+      $first_name = $_POST['first_name'];
+      $last_name = $_POST['last_name'];
+      $username = $_POST['username'];
+      $company = $_POST['company'];
+      $email = $_POST['email'];
+
+
+
+      if ($password == $password2) {
+          userRegister($first_name,$last_name,$username,$email,$password); 
+      }else{
+        $message = 'Passwords do not match.';
+      }
+      
 
 
 
@@ -107,6 +123,7 @@
 
             <input name="submit" type="submit" value="Create Account" class="btn btn-primary" style="float: right;margin-top: 10px;">
           </form>
+          <?php echo $message?>
 
 
 

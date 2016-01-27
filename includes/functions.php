@@ -24,19 +24,24 @@
 
 
 
-	function userRegister(){
+	function userRegister($first,$last,$user,$e,$pass){
 		$dbh = openDB();
 
-		$stmt = $dbh->prepare("INSERT INTO users (first_name, last_name) VALUES (:first_name, :last_name)");
+		$stmt = $dbh->prepare("INSERT INTO users (first_name, last_name,username,email,password,signup_date) VALUES (:first_name, :last_name,:username,:email,:password,:signup)");
 		$stmt->bindParam(':first_name', $first_name);
 		$stmt->bindParam(':last_name', $last_name);
 		$stmt->bindParam(':username',$username);
 		$stmt->bindParam(':email',$email);
-		
+		$stmt->bindParam(':password',$password);
+		$stmt->bindParam(':signup',$signup_date);
 
 		// insert one row
-		$first_name = 'kyle';
-		$last_name = 'foulks';
+		$first_name = $first;
+		$last_name = $last;
+		$username = $user;
+		$email = $e;
+		$password = $pass;
+		$signup_date = time();
 		$stmt->execute();
 
 
